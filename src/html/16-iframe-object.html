@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iframe, object 요소 | Likelion Bootcamp</title>
+    <style>
+      iframe {
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/index.html">Index로 이동</a>
+    <hr />
+    <h1>iframe, object 요소</h1>
+
+    <h2>object 예시</h2>
+    <!--이미지-->
+    <div>
+      <object data="/src/assets/face/face5.jpg" type="image/jpeg"></object>
+    </div>
+    <!-- PDF -->
+    <figure>
+      <object width="1000" height="800" data="/src/assets/pdf/naver-coding-convention.pdf" type="application/pdf"></object>
+      <figcaption>NHN Coding Convention</figcaption>
+    </figure>
+    <br />
+    <h2>iframe 예시</h2>
+    <!--youTube 동영상 삽입 예시-->
+    <figure>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/W6VSA3GDK6s?si=eYiIoVRhkpOCyPKP"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <figcaption>WAI-ARIA 소개</figcaption>
+    </figure>
+    <!--지도-->
+    <div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.9962634864285!2d127.0309983153172!3d37.49390797981271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2f6e6f4b6b5%3A0x8e5f5e8f4e4e4e4e!2z7J247JqU7ISc64uI7J206rK97Yq567OE7Iuc66y47JqwIOyXrOyekOyXrCDshLjsmpTsnYzrk4Trj4g!5e0!3m2!1sko!2skr!4v1700346356225!5m2!1sko!2skr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </body>
+</html>
