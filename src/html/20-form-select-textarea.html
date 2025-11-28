@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폼(select, textrarea)요소 | Likelion Bootcamp</title>
+    <style>
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/index.html">Index로 이동</a>
+    <hr />
+    <h1>폼(select, textrarea)요소</h1>
+    <!--콤보박스-->
+    <div>
+      <label class="sr-only" "petSelect-1">반려동물</label>
+      <select name="" id="petSelect-1">
+      <option arua-hidden="true" value="dog">강아지</option>
+      <option value="dog">강아지</option>
+      <option value="cat">나자신</option>
+      <option value="dog">rock</option>
+      <option value="dog">funk</option>
+      <option value="dog">disco</option>
+      </select>
+    </div>
+    <hr />
+    <!--리스트 박스, multiple 중복가능-->
+    <div>
+      <label class="sr-only" "petSelect-2">반려동물</label>
+      <select size="10" mutiple name="petSelect-2" id="petSelect-2">
+      <option arua-hidden="true" value="dog">반려동물을 선택하세요.</option>
+      <option value="dog">강아지</option>
+      <option value="cat">나자신</option>
+      <option value="dog">rock</option>
+      <option value="dog">funk</option>
+      <option value="dog">disco</option>
+      </select>
+    </div>
+     <!--여러줄 글 상자-->
+     <label for="memo" class="sr-only">메모</label>
+     <textarea name="memo" id="memo"" cols="30" row="10">
+내용을 입력해 주세요 .
+     </textarea>
+    </div>
+  </body>
+</html>
